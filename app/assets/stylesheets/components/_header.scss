@@ -1,0 +1,114 @@
+header {
+  align-items: center;
+  background-color: $dark-gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+
+  @include media-up($medium-screen) {
+    min-height: 60px;
+    padding: 0px 60px;
+  }
+}
+
+.header-icon {
+  color: $white;
+  font-weight: $bold-font-weight;
+  font-size: $xl-font-size;
+}
+
+.navbar {
+  @include media-down($medium-screen) {
+    width: 100%;
+  }
+}
+
+.navbar-link {
+  color: $white;
+  font-weight: $semibold-font-weight;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: border-bottom 150ms;
+
+  @include media-up($medium-screen) {
+    &.active,
+    &:hover, {
+      border-bottom: $thicker-border;
+    }
+  }
+
+  @include media-down($medium-screen) {
+    display: block;
+    padding: 20px 15px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $yellow;
+    }
+  }
+}
+
+.mobile-hidden {
+  @include media-down($medium-screen) {
+    display: none;
+  }
+}
+
+// Hamburger CSS inspired by from https://codepen.io/rss/pen/vIDKH
+
+.hamburger {
+  display: none;
+
+  @include media-down($medium-screen) {
+    display: block;
+    transition: margin 600ms;
+    cursor: pointer;
+
+    .hamburger-line {
+      display: block;
+      width: 3.8em;
+      height: 2px;
+      margin: 10px 0;
+      border-right: 2.8em solid #fff;
+      border-left: 0.6em solid #d6d6d6;
+      box-sizing: border-box;
+      transition-property: transform, margin, border-right-color, box-shadow;
+      transition-duration: 600ms;
+    }
+  }
+}
+
+.hamburger .hamburger-line:nth-of-type(1) {
+  transition: opacity 300ms;
+}
+.hamburger .hamburger-line:nth-of-type(2) {
+  transform: rotate(-180deg);
+}
+
+.navbar-active {
+  padding: 17.5px 0;
+}
+
+.navbar-active .hamburger-line {
+  margin: 0;
+
+  &:nth-of-type(1) {
+    opacity: 0;
+  }
+
+  &:nth-of-type(2) {
+    transform: rotate(-135deg) translateY(-.25em);
+    border-right-color: #e9b8b9;
+    box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+  }
+
+  &:nth-of-type(3) {
+    transform: rotate(-45deg);
+    border-right-color: #ddf1da;
+    box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+  }
+}

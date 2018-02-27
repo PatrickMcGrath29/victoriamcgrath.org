@@ -1,0 +1,29 @@
+$footer-height: 175px;
+
+.footer-content {
+  @include flex-responsive();
+  min-height: $footer-height;
+}
+
+.footer-info,
+.footer-action {
+  @include flex-column();
+  @include padding(10px);
+  justify-content: center;
+}
+
+.footer-info {
+  align-items: center;
+  flex-basis: 60%;
+  text-align: center;
+}
+
+.footer-action {
+  align-items: flex-end;
+  flex-basis: 40%;
+
+  @include media-down($medium-screen) {
+    justify-content: center;
+  }
+}
+

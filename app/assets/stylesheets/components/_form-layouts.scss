@@ -1,0 +1,16 @@
+.form-row {
+  @include margin(20px null);
+  @include flex-responsive();
+}
+
+.form-input {
+  @include margin(10px null);
+  @include flex-column();
+  flex: 1 50%;
+
+  @include media-up($medium-screen) {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}

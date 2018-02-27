@@ -1,0 +1,21 @@
+input,
+textarea,
+button {
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#{$all-text-inputs} {
+  @include padding(7.5px 10px);
+  border: $thin-border;
+  border-radius: $base-border-radius;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  color: $medium-gray;
+}

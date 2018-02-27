@@ -1,1 +1,17 @@
-<div>Header</div>
+  <header role="banner">
+    <%= link_to root_path, class: "header-icon" do %>
+      Victoria McGrath Foundation
+    <% end %>
+
+    <div class="navbar-collapse-toggle hamburger">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </div>
+    <nav class="navbar">
+      <%= link_to "Home", root_path, class: "navbar-link" %>
+      <%= link_to "Events", root_path, class: "navbar-link" %>
+      <%= link_to "Get Involved", root_path, class: "navbar-link" %>
+      <%= link_to "Donate", root_path, class: "navbar-link" %>
+    </nav>
+  </header>
