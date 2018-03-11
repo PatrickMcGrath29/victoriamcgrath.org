@@ -1,0 +1,11 @@
+.hero {
+  @include flex-responsive();
+  background-image: url("https://media.istockphoto.com/vectors/wave-seamless-pattern-in-doodle-style-vector-id531671567?s=2048x2048");
+  background-size: cover;
+}
+
+.hero-content {
+  @include padding(20px 50px);
+  display: flex;
+  flex-direction: column;
+}

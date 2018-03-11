@@ -1,6 +1,6 @@
 header {
   align-items: center;
-  background-color: $dark-gray;
+  background-color: $vsm-primary;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -47,7 +47,7 @@ header {
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid $yellow;
+      border-bottom: 1px solid $vsm-darker;
     }
   }
 }

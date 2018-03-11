@@ -1,0 +1,18 @@
+.section-split {
+  @include flex-responsive();
+
+  .section-first,
+  .section-second {
+    flex-basis: 50%;
+  }
+}
+
+.section-content {
+  @include margin(30px);
+  display: flex;
+  align-items: center;
+}
+
+.section-image img {
+  width: 100%;
+}

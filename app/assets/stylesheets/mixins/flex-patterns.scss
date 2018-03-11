@@ -10,3 +10,13 @@
     flex-direction: column;
   }
 }
+
+@mixin flex-responsive-v-center() {
+  @include media-up($medium-screen) {
+    align-items: center
+  }
+
+  @include media-down($medium-screen) {
+    justify-content: center;
+  }
+}

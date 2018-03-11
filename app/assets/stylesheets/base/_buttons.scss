@@ -2,7 +2,7 @@
   background-color: $action-color;
   border-bottom: 3px solid $text-color;
   border-radius: 3px;
-  color: $nuacm-blue;
+  color: $vsm-primary;
   padding: 8px 20px;
   font-family: $base-font-family;
 
@@ -12,7 +12,7 @@
   }
 
   &.light {
-    border-color: $nuacm-blue;
+    border-color: $vsm-primary;
 
     &:hover {
       background-color: $light-action-color-hover;
