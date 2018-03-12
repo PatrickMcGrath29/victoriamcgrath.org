@@ -7,3 +7,30 @@ body {
   background-color: $background-color;
   margin: 0;
 }
+
+.section-header {
+  margin-top: 20px;
+}
+
+.section-header-centered {
+  text-align: center;
+}
+
+.gradient-heading {
+  background-color: rgba(242, 185, 184, .5);
+  display: inline-block;
+}
+
+.white-outline {
+  display: inline-block;
+  @include padding(3px 7.5px);
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.white-background {
+  background-color: $white;
+}
+
+.no-margin {
+  margin: 0;
+}

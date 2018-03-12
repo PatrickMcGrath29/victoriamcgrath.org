@@ -1,6 +1,9 @@
-h4 {
-    margin-top: 20px;
+.full-page-text {
+  @include padding(70px 0);
+  text-align: center;
 }
 
-.homepage-content {
+.get-involved {
+  @include padding(20px 0);
+  text-align: center;
 }
