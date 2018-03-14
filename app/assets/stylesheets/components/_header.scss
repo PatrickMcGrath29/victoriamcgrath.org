@@ -53,9 +53,14 @@ header {
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid $vsm-darker;
+      border-bottom: 1px solid $vsm-darkest;
     }
   }
+}
+
+.navbar-link-darker {
+  background-color: $vsm-darker;
+  border-radius: $base-border-radius;
 }
 
 .mobile-hidden {

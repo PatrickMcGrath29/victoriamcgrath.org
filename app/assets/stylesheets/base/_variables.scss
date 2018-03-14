@@ -2,7 +2,8 @@ $base-font-family: "Avenir", "HelveticaNeue", "Helvetica Neue";
 
 // Colors
 $vsm-primary: #018697;
-$vsm-darker: #013D45;
+$vsm-darker: #01616d;
+$vsm-darkest: #013D45;
 
 $background-color: #e7f4f542;
 $green: #16a085;
@@ -33,7 +34,7 @@ $semibold-font-weight: 600;
 $bold-font-weight: 700;
 
 // Borders
-$base-border-color: $vsm-darker;
+$base-border-color: $vsm-darkest;
 $base-border-radius: 4px;
 
 $base-border: $base-border-color 2px solid;
