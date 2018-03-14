@@ -1,15 +1,24 @@
 <section id="donate">
   <div class="container">
-    <div class="content-section">
-      Checks can be sent to:
-      <address>
-        The Victoria S McGrath Foundation<br>
-        28 Davis Hill Road<br>
-        Weston, CT 06883
-      </address>
-    </div>
-    <div class="donation-notice">
-      The Victoria S McGrath Foundation is a 501(c)(3) organization. Gifts are deductible to the full extent allowable under IRS regulations
+    <div class="donation-wrapper">
+      <div class="donation-form">
+        <%= render partial: "shared/donation_form" %>
+      </div>
+      <div class="donation-details">
+        The Victoria S McGrath Foundation is a 501(c)(3) organization. All gifts are tax deductible to the full extent allowed by federal law.  The Victoria S.McGrath federal tax ID number is 82-4235964.
+        <br>
+        Our policy is to apply donations designated to a specific program or outreach.
+        Thank you for your consideration and donation!
+        <br>
+        <div class="donation-address">
+          Checks can be sent to:
+          <address>
+            The Victoria S McGrath Foundation<br>
+            28 Davis Hill Road<br>
+            Weston, CT 06883
+          </address>
+        </div>
+      </div>
     </div>
   </div>
 </section>

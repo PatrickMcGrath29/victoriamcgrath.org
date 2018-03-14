@@ -16,6 +16,11 @@ header {
   color: $white;
   font-weight: $bold-font-weight;
   font-size: $xl-font-size;
+
+  .header-image {
+    width: 150px;
+    vertical-align: middle;
+  }
 }
 
 .navbar {
@@ -25,6 +30,7 @@ header {
 }
 
 .navbar-link {
+  border-bottom-color: $vsm-primary;
   color: $white;
   font-weight: $semibold-font-weight;
   padding: 10px 15px;
