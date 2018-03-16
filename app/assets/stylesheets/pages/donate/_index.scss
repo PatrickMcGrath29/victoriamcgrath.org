@@ -1,22 +1,32 @@
 .donation-wrapper {
   @include flex-responsive();
+  @include margin(20px);
 }
 
-.donation-details,
-.donation-form {
-  flex-basis: 50%;
+.donation-system {
+  flex-basis: 40%;
 }
 
 .donation-details {
   @include padding(20px);
+  flex-basis: 60%;
 }
 
-.donation-form {
+.donation-address {
+  margin-left: 15px;
+}
+
+.donation-system {
   align-items: center;
+  display: flex;
   justify-content: center;
 
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  .donation-item-wrapper {
+    text-align: center;
   }
 }
