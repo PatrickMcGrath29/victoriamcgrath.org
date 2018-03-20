@@ -5,3 +5,15 @@
 .row-element {
   @include padding(10px 30px);
 }
+
+.one-third {
+  flex-basis: 33%;
+
+  img {
+    @include size(300px auto);
+  }
+}
+
+.two-thirds {
+  flex-basis: 66.7%;
+}

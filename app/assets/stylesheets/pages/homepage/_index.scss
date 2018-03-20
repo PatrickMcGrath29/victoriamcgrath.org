@@ -5,5 +5,8 @@
 
 .get-involved {
   @include padding(20px 0);
-  text-align: center;
+}
+
+.door-opener-image {
+  @include size(300px auto);
 }

@@ -24,7 +24,7 @@ body {
 .white-outline {
   display: inline-block;
   @include padding(3px 7.5px);
-  background-color: rgba(255, 255, 255, .75);
+  background-color: $cream-bg;
 }
 
 .white-background {
