@@ -5,6 +5,10 @@
   .section-second {
     flex-basis: 50%;
   }
+
+  &.section-split-centered {
+    align-items: center;
+  }
 }
 
 .section-content {
@@ -13,6 +17,10 @@
   align-items: center;
 }
 
-.section-image img {
-  width: 100%;
+.section-image {
+  text-align: center;
+  vertical-align: middle;
+  img {
+    @include size(450px auto);
+  }
 }

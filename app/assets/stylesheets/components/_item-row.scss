@@ -1,9 +1,18 @@
 .item-row {
   @include flex-responsive();
+
+  &.item-row-centered {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .row-element {
   @include padding(10px 30px);
+
+  &.row-element-centered {
+    text-align: center;
+  }
 }
 
 .one-third {
