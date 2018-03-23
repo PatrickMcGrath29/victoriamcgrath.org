@@ -1,0 +1,29 @@
+.section-header-wrapper {
+
+  &.left-stroke,
+  &.right-stroke {
+    position: relative;
+    min-height: 100px;
+
+    &.centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &::before {
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 40vw;
+      height: 100px;
+    }
+  }
+
+  &.left-stroke::before {
+    background-image: url(https://s3.amazonaws.com/victoriamcgrathfoundation/strokes/left-brush.png);
+    left: 0;
+  }
+}

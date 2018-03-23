@@ -19,7 +19,7 @@ $footer-height: 175px;
 }
 
 .footer-action {
-  align-items: flex-end;
+  align-items: center;
   flex-basis: 40%;
 
   @include media-down($medium-screen) {
@@ -27,3 +27,6 @@ $footer-height: 175px;
   }
 }
 
+.mailing-list-form {
+  @include margin(10px 0);
+}

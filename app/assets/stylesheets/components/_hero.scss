@@ -1,9 +1,11 @@
 .hero {
   @include flex-responsive();
   align-items: center;
-  background-image: url("https://media.istockphoto.com/vectors/wave-seamless-pattern-in-doodle-style-vector-id531671567?s=2048x2048");
-  background-size: cover;
-  height: 400px;
+  background-image: url("https://s3.amazonaws.com/victoriamcgrathfoundation/logos/vmf-svg.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 .hero-content {
