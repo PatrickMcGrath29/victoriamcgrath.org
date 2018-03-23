@@ -24,6 +24,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $heading-font-family;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -63,4 +64,12 @@ h6 {
   font-size: 1.5rem;
   line-height: 1.6;
   letter-spacing: 0;
+}
+
+.gold-color {
+  color: $yellow;
+}
+
+.blue-color {
+  color: $blue;
 }
