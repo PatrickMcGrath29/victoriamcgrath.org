@@ -21,15 +21,6 @@
   }
 }
 
-// Bootstrap overrides
-a {
-  text-decoration: none !important;
-
-  &:focus {
-    color: $text-color !important;
-  }
-}
-
 .social-media-button {
   @include padding(15px);
   border: none;

@@ -1,5 +1,10 @@
 $footer-height: 175px;
 
+footer {
+  background-color: $vsm-primary;
+  color: $white;
+}
+
 .footer-content {
   @include flex-responsive();
   min-height: $footer-height;
@@ -29,4 +34,8 @@ $footer-height: 175px;
 
 .mailing-list-form {
   @include margin(10px 0);
+}
+
+.contact-email {
+  font-weight: $semibold-font-weight;
 }
