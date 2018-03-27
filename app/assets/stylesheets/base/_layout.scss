@@ -16,6 +16,14 @@ body {
   margin-bottom: 0;
 }
 
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
 .white-outline {
   display: inline-block;
   @include padding(3px 7.5px);
