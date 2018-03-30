@@ -1,10 +1,14 @@
 .section-split {
   @include flex-responsive();
 
-  .section-first,
-  .section-second {
-    flex-basis: 50%;
+  .section-first {
+    flex-basis: 60%;
   }
+
+.section-second {
+  @include margin(20px);
+  flex-basis: 40%;
+}
 
   &.section-split-centered {
     align-items: center;
@@ -20,7 +24,9 @@
 .section-image {
   text-align: center;
   vertical-align: middle;
+  width: 400px;
+
   img {
-    @include size(450px auto);
+    @include size(100% auto);
   }
 }

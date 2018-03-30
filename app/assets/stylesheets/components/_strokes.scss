@@ -1,15 +1,15 @@
 .section-header-wrapper {
 
+	&.centered {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
   &.left-stroke,
   &.right-stroke {
     position: relative;
     min-height: 100px;
-
-    &.centered {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
 
     &::before {
       background-repeat: no-repeat;
