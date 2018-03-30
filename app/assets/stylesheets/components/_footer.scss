@@ -36,6 +36,14 @@ footer {
   @include margin(10px 0);
 }
 
+.mailing-list-cta {
+  text-align: center;
+}
+
 .contact-email {
   font-weight: $semibold-font-weight;
+}
+
+.subscribe-button {
+  background-color: $vsm-darkest !important;
 }
