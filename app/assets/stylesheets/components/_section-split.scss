@@ -22,9 +22,11 @@
 }
 
 .section-image {
+  @include size(400px);
   text-align: center;
   vertical-align: middle;
-  width: 400px;
+  overflow: hidden;
+
 
   img {
     @include size(100% auto);

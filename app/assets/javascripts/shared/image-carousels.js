@@ -8,3 +8,4 @@ $(document).ready(function() {
     arrows: false
   });
 })
+console.log("here");
