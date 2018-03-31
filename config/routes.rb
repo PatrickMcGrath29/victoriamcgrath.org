@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   get "about", to: "pages#show", page: "about"
   get "story", to: "pages#show", page: "story"
-  get "events", to: "pages#show", page: "events"
+  get "projects", to: "pages#show", page: "projects"
   
   Rails.application.routes.draw do
     get "pages/:page" => "pages#show"

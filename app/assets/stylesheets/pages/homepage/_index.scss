@@ -6,3 +6,7 @@
 .door-opener-image {
   @include size(300px auto);
 }
+
+.homepage-video {
+  @include margin(30px);
+}
