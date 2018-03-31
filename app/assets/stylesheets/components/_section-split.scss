@@ -16,13 +16,15 @@
 }
 
 .section-image {
-  @include size(400px);
+  @include size(null 400px);
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
 
 
   img {
-    @include size(100% auto);
+    @include size(400px);
+    display: block;
+    object-fit: contain;    
   }
 }

@@ -8,4 +8,15 @@ $(document).ready(function() {
     arrows: false
   });
 })
-console.log("here");
+
+$(document).ready(function() {
+  $(".wrap-carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2300,
+    lazyLoad: "ondemand",
+    arrows: false
+  });
+})
+
