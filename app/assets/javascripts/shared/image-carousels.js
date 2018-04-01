@@ -10,8 +10,8 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
-  $(".wrap-carousel").slick({
-    slidesToShow: 3,
+  $(".2-wrap-carousel").slick({
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2300,
@@ -20,3 +20,13 @@ $(document).ready(function() {
   });
 })
 
+$(document).ready(function() {
+  $(".3-wrap-carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2300,
+    lazyLoad: "ondemand",
+    arrows: false
+  });
+});
