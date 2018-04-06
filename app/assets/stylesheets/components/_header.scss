@@ -85,7 +85,7 @@ header {
       height: 2px;
       margin: 10px 0;
       border-right: 2.8em solid #fff;
-      border-left: 0.6em solid #d6d6d6;
+      border-left: 1em solid white;
       box-sizing: border-box;
       transition-property: transform, margin, border-right-color, box-shadow;
       transition-duration: 600ms;
@@ -113,13 +113,9 @@ header {
 
   &:nth-of-type(2) {
     transform: rotate(-135deg) translateY(-.25em);
-    border-right-color: #e9b8b9;
-    box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
   }
 
   &:nth-of-type(3) {
     transform: rotate(-45deg);
-    border-right-color: #ddf1da;
-    box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
   }
 }
