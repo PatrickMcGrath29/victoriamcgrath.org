@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'bourbon'
+gem 'bourbon', '5.0.0'
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'rails', '~> 5.1.4'

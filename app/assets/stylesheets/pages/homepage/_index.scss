@@ -4,7 +4,7 @@
 }
 
 .door-opener-image {
-  @include size(300px auto);
+  @include size(300px, auto);
 }
 
 .homepage-video {
