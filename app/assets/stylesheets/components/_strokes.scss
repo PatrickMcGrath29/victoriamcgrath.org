@@ -8,17 +8,19 @@
 
   &.left-stroke,
   &.right-stroke {
-    position: relative;
-    min-height: 100px;
+    @include media-up($medium-screen) {
+      position: relative;
+      min-height: 100px;
 
-    &::before {
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 40vw;
-      height: 100px;
+      &::before {
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 40vw;
+        height: 100px;
+      }
     }
   }
 

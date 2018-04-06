@@ -1,0 +1,27 @@
+.section-wrapper {
+  @include margin(30px 0);
+}
+
+.section-header-wrapper {
+  @include margin(null $gutter-size);
+}
+
+.section-header {
+  @include margin(20px 0);
+
+  @include media-down($medium-screen) {
+    text-align: center;
+  }
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}

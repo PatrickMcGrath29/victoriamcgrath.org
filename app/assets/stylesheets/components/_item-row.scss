@@ -8,7 +8,11 @@
 }
 
 .row-element {
-  @include padding(10px 30px);
+  @include padding(10px 10px);
+
+  @include media-up($medium-screen) {
+    @include padding(null 40px);
+  }
 
   &.row-element-centered {
     text-align: center;
@@ -19,7 +23,11 @@
   flex-basis: 33%;
 
   img {
-    @include size(400px, auto);
+    @include size(250px, auto);
+
+    @include media-up($medium-screen) {
+      @include size(400px, auto);      
+    }
   }
 }
 

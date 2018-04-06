@@ -16,7 +16,7 @@
 }
 
 .section-image {
-  height: 400px;
+  @include size(100%, 400px);
   overflow: hidden;
   text-align: center;
   vertical-align: middle;

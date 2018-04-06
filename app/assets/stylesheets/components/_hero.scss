@@ -1,12 +1,23 @@
+.hero-wrapper {
+}
+
 .hero {
   @include flex-responsive();
   align-items: center;
-  background-image: url("https://s3.amazonaws.com/victoriamcgrathfoundation/logos/homepage_logo.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: $white;
-  height: 550px;
+
+  @include media-down($medium-screen) {
+    background-image: url("https://i.imgur.com/lDZaxgj.png");
+    height: 200px;
+  }
+
+  @include media-up($medium-screen) {
+    background-image: url("https://s3.amazonaws.com/victoriamcgrathfoundation/logos/homepage_logo.svg");
+    height: 550px;
+  }
 }
 
 .hero-content {
