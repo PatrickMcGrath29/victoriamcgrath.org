@@ -5,3 +5,9 @@
 @mixin media-up($breakpoint) {
   @media (min-width: $breakpoint) { @content; }
 }
+
+.mobile-only {
+  @include media-up($medium-screen) {
+    display: none;
+  }
+}
