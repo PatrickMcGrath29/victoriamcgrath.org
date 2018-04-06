@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on("ready turbolinks:load", function() {
   $(".carousel").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -7,9 +7,9 @@ $(document).ready(function() {
     lazyLoad: "ondemand",
     arrows: false
   });
-})
+});
 
-$(document).ready(function() {
+$(document).on("ready turbolinks:load", function() {
   $(".2-wrap-carousel").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
 })
 
-$(document).ready(function() {
+$(document).on("ready turbolinks:load", function() {
   $(".3-wrap-carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 1,

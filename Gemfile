@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem "jquery-slick-rails"
+gem 'turbolinks', '~> 5'
 
 
 group :development, :test do
