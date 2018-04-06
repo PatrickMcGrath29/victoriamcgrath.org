@@ -16,10 +16,10 @@
 }
 
 .section-image {
-  @include size(null 400px);
+  height: 400px;
+  overflow: hidden;
   text-align: center;
   vertical-align: middle;
-  overflow: hidden;
 
 
   img {
