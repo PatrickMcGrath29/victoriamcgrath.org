@@ -47,3 +47,10 @@ footer {
 .subscribe-button {
   background-color: $vsm-darkest !important;
 }
+
+.svg-icon {
+  svg {
+    @include size(25px);
+    fill: white;
+  }
+}
