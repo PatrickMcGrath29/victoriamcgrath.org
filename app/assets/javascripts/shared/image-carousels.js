@@ -16,7 +16,15 @@ $(document).on("ready", function() {
     autoplay: true,
     autoplaySpeed: 2300,
     lazyLoad: "ondemand",
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 })
 

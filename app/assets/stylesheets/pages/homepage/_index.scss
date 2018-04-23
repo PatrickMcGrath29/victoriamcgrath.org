@@ -3,10 +3,6 @@
   text-align: center;
 }
 
-.door-opener-image {
-  @include size(300px, auto);
-}
-
 .homepage-video {
   @include media-up($medium-screen) {
     @include margin(30px);
@@ -19,4 +15,23 @@
       width: 100%;
     }  
   }
+}
+
+.blue-gold-contrast {
+  @include padding(null 4px);
+  background-color: blue;
+  color: gold;
+}
+
+.door-open-images {
+  display: flex;
+  justify-content: center;
+
+  @include media-down($medium-screen) {
+    flex-direction: column;
+  }
+}
+
+.home-project-images {
+  margin-bottom: 20px;
 }

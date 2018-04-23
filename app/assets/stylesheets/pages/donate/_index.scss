@@ -1,15 +1,17 @@
 .donation-wrapper {
-  @include flex-responsive();
   @include margin(20px);
-}
 
-.donation-system {
-  flex-basis: 40%;
-}
+  @include media-up($medium-screen) {
+    @include flex-responsive();
 
-.donation-details {
-  @include padding(20px);
-  flex-basis: 60%;
+    .donation-system {
+      flex-basis: 40%;
+    }
+
+    .donation-details {
+      flex-basis: 60%;
+    }
+  }
 }
 
 .donation-address {
