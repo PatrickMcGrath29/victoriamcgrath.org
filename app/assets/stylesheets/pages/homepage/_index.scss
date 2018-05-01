@@ -3,20 +3,6 @@
   text-align: center;
 }
 
-.homepage-video {
-  @include media-up($medium-screen) {
-    @include margin(30px);
-  }
-
-  @include media-down($medium-screen) {
-    padding-bottom: 0;
-
-    iframe{
-      width: 100%;
-    }  
-  }
-}
-
 .blue-gold-contrast {
   @include padding(null 4px);
   background-color: blue;
@@ -32,6 +18,23 @@
   }
 }
 
-.home-project-images {
-  margin-bottom: 20px;
+.triple-display-wrapper {
+  @include media-up($medium-screen) {
+    @include padding(10px);
+    text-align: center;
+  }
+}
+
+.homepage-video {
+  @include media-up($medium-screen) {
+    @include margin(30px);
+  }
+
+  @include media-down($medium-screen) {
+    padding-bottom: 0;
+
+    iframe{
+      width: 100%;
+    }
+  }
 }

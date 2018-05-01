@@ -1,7 +1,7 @@
-.item-row {
+.flex-row {
   @include flex-responsive();
 
-  &.item-row-centered {
+  &.flex-row-centered {
     align-items: center;
 
     @include media-up($medium-screen) {
@@ -10,19 +10,19 @@
   }
 }
 
-.row-element {
+.flex-row-element {
   @include padding(10px 10px);
 
   @include media-up($medium-screen) {
     @include padding(null 40px);
   }
 
-  &.row-element-centered {
+  &.flex-row-element-centered {
     text-align: center;
   }
 }
 
-.one-third {
+.flex-one-third {
   flex-basis: 33%;
 
   img {
@@ -34,6 +34,6 @@
   }
 }
 
-.two-thirds {
+.flex-two-thirds {
   flex-basis: 66.7%;
 }

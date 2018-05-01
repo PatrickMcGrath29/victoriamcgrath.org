@@ -7,14 +7,8 @@ body {
   margin: 0;
 }
 
-.white-outline {
-  display: inline-block;
-  @include padding(3px 7.5px);
-  background-color: $cream-bg;
-}
-
-.darker-bg {
-  background-color: $background-color;
+section {
+  margin: 20px 0;
 }
 
 .no-margin {
