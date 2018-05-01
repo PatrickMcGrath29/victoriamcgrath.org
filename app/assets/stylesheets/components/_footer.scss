@@ -19,13 +19,19 @@ footer {
 
 .footer-info {
   align-items: center;
-  flex-basis: 60%;
   text-align: center;
+
+  @include media-up($medium-screen) {
+    flex-basis: 60%;
+  }
 }
 
 .footer-action {
   align-items: center;
-  flex-basis: 40%;
+
+  @include media-up($medium-screen) {
+    flex-basis: 40%;
+  }
 
   @include media-down($medium-screen) {
     justify-content: center;
