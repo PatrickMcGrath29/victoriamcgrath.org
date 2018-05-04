@@ -38,3 +38,16 @@
     }
   }
 }
+
+.wasl-image-wrapper {
+  overflow: hidden;
+}
+
+.wasl-image {
+  min-height: 150px;
+  width: 150%;
+
+  @include media-up($medium-screen) {
+    width: 100%;
+  }
+}

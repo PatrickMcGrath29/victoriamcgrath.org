@@ -14,10 +14,6 @@
 
   @include media-up($medium-screen) {
     background-image: url("https://s3.amazonaws.com/victoriamcgrathfoundation/logos/homepage_logo.svg");
-    height: 350px;
-  }
-
-  @include media-up($large-screen) {
     height: 550px;
   }
 }
