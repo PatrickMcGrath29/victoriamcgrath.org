@@ -18,7 +18,7 @@
   }
 }
 
-.triple-display-wrapper {
+.triple-display-item {
   @include media-up($medium-screen) {
     @include padding(10px);
     text-align: center;
