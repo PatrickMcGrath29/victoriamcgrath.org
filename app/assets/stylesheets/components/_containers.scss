@@ -1,18 +1,5 @@
-.container,
-.container-small {
-  @include margin(null auto);
-}
-
 .container {
+  @include margin(null auto);
   @include padding(null $gutter-size);
   max-width: $container-width;
-}
-
-.container-small {
-  @include padding(null $gutter-size);
-  max-width: $container-width * 0.65;
-}
-
-.container-not-padded {
-  @include padding(null 0);
 }

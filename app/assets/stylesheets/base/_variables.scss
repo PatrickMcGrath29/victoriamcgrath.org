@@ -6,7 +6,7 @@ $vsm-primary: #018697;
 $vsm-darker: #01616d;
 $vsm-darkest: #013D45;
 
-$cream-bg: rgba(245, 247, 238, 0.8);
+$offwhite-bg: rgba(245, 247, 238, 0.8);
 
 $background-color: #e7f4f542;
 $green: #16a085;
@@ -41,10 +41,12 @@ $base-gradient: linear-gradient(135deg, $vsm-primary 0%, rgba(181,226,227,1) 100
 
 // Borders
 $base-border-color: $vsm-darkest;
+$light-border-color: $vsm-primary;
 $base-border-radius: 4px;
 
 $base-border: $base-border-color 2px solid;
 $thicker-border: $base-border-color 3px solid;
+$light-border: $light-border-color 3px solid;
 
 $thin-border: $medium-gray 1px solid;
 //Shadows

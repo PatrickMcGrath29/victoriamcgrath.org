@@ -6,17 +6,15 @@
         Contact us at <span class="contact-email">hello@victoriamcgrath.org</span>
       </div>
       <div class="footer-action">
-        <div class="contact">
-        </div>
+        <%= link_to "https://www.facebook.com/victoriamcgrath.org/" do %>
+          <%= import_icon("facebook") %>
+        <% end %>
         <div class="mailing-list-form">
           <div class="mailing-list-cta">
             Subscribe to our mailing list for the latest updates.
           </div>
           <%= render partial: "shared/mailing_list_form" %>
         </div>
-        <%= link_to "https://www.facebook.com/victoriamcgrath.org/" do %>
-          <%= import_icon("facebook") %>
-        <% end %>      
       </div>
     </div>
   </div>

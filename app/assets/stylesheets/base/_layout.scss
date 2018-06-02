@@ -9,6 +9,7 @@ body {
 
 section {
   margin: 20px 0;
+  padding: 20px 0;
 }
 
 .no-margin {
@@ -21,4 +22,8 @@ section {
 
 .gradient-background {
   background: $base-gradient;
+}
+
+.contrast-background {
+  background-color: $offwhite-bg;
 }

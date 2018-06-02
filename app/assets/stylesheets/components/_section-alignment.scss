@@ -8,9 +8,16 @@
 
 .section-header {
   @include margin(20px 0);
+  border-left: $light-border;
+  padding-left: 5px;
 
   @include media-down($medium-screen) {
     text-align: center;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: $bold-font-weight;
   }
 }
 
