@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :authenticate_as_admin, except: [:index]
+  before_action :authenticate_as_admin, except: %w{index show}
 
   def index
     @upcoming_events = Event.upcoming.map{ |event| EventPresenter.new(event) }
