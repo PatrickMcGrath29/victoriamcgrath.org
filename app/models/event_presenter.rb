@@ -6,4 +6,8 @@ class EventPresenter
   def initialize(event)
     @event = event
   end
+
+  def path
+    @event.id
+  end
 end

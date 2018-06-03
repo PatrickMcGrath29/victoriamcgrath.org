@@ -6,6 +6,12 @@ class EventsController < ApplicationController
     @past_events = Event.past.map{ |event| EventPresenter.new(event) }
   end
 
+  def show
+    @event = Event.find(params[:id])
+  rescue
+    redirect_to events_path
+  end
+
   def new
     @event = Event.new
   end
@@ -27,7 +33,7 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     if @event && @event.update(event_params)
-      redirect_to events_path
+      redirect_to event_path(@event)
     else
       render :edit
     end
