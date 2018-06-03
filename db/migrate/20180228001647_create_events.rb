@@ -8,7 +8,7 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.text :short_description
       t.string :primary_image
       t.string :action_link
-      t.array :images
+      t.text :images, array: true, default: []
       t.boolean :is_featured
 
       t.timestamps

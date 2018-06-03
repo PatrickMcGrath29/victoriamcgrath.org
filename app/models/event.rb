@@ -1,7 +1,7 @@
 class Event < ApplicationRecord
 
   def self.parameters
-    %s{
+    %i(
       title
       date_time
       location
@@ -11,7 +11,7 @@ class Event < ApplicationRecord
       images
       action_link
       is_featured
-    }
+    )
   end
 
   def self.upcoming
