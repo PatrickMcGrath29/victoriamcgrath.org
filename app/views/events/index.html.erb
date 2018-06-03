@@ -2,13 +2,15 @@
   <div class="container">
     <% if @upcoming_events.present? %>
       <div class="upcoming-events">
-        <h2> Upcoming Events </h2>
+        <div class="section-header-wrapper centered">
+          <h4 class="section-header">Upcoming Events</h4>
+        </div>
         <%= render partial: "shared/event-card", collection: @upcoming_events, as: :event %>
       </div>
     <% end %>
     <% if @past_events.present? %>
       <div class="past-events">
-        <h2> Past Events </h2>
+        <h3> Past Events </h3>
         <%= render partial: "shared/event-card", collection: @past_events, as: :event %>
       </div>
     <% end %>

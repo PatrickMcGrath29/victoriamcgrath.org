@@ -57,6 +57,12 @@ footer {
 .svg-icon {
   svg {
     @include size(30px);
-    fill: white;
+    fill: $white;
   }
+}
+
+.footer-nav-link {
+  color: $vsm-darkest;
+  font-size: $small-font-size;
+  text-transform: uppercase;
 }
