@@ -1,0 +1,28 @@
+.event-card {
+  @include flex-responsive();
+  @include padding(20px);
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+  color: $text-color;
+}
+
+.event-card__image img {
+  @include size(250px, auto);
+  max-height: 400px;
+}
+
+.event-card__information {
+  @include margin(20px 0);
+
+  @include media-up($medium-screen) {
+    @include margin(0 0 0 20px);
+  }
+}
+
+.event-card__row {
+  @include flex-responsive();
+}
+
+.event-card__item {
+  flex-basis: 50%;
+}

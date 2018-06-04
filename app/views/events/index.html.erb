@@ -1,21 +1,26 @@
 <section id="events">
-  <div class="container">
-    <% if @upcoming_events.present? %>
+  <% if @upcoming_events.present? %>
+    <div class="section-header-wrapper left-stroke centered">
+      <h4 class="section-header">Upcoming Events</h4>
+    </div>
+    <div class="container">
       <div class="upcoming-events">
-        <div class="section-header-wrapper centered">
-          <h4 class="section-header">Upcoming Events</h4>
-        </div>
         <%= render partial: "shared/event-card", collection: @upcoming_events, as: :event %>
       </div>
-    <% end %>
-    <% if @past_events.present? %>
+    </div>
+  <% end %>
+  <% if @past_events.present? %>
+    <div class="section-header-wrapper left-stroke centered">
+      <h4 class="section-header">Past Events</h4>
+    </div>
+    <div class="container">
       <div class="past-events">
-        <h3> Past Events </h3>
         <%= render partial: "shared/event-card", collection: @past_events, as: :event %>
       </div>
-    <% end %>
-    <% if admin_user? %>
-      <%= link_to "New Event", new_event_path, class: "button" %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+  <br/>
+  <% if admin_user? %>
+    <%= link_to "New Event", new_event_path, class: "button" %>
+  <% end %>
 </section>

@@ -1,3 +1,25 @@
-<%= link_to event_path(event.path), class: "event-card" do %>
-  <%= sanitize(event.description) %>
+<%= link_to event_path(event.path) do %>
+  <div class="event-card">
+    <div class="event-card__image">
+      <%= image_tag event.primary_image %>
+    </div>
+    <div class="event-card__information">
+      <h4><%= event.title %></h4>
+      <%= sanitize(event.short_description) %>
+      <div class="event-card__row">
+        <% if event.location.present? %>
+          <div class="event-card__item">
+            <div class="visual-label"> Location </div>
+            <%= event.location %>
+          </div>
+        <% end %>
+        <% if event.date_time.present? %>
+          <div class="event-card__item">
+            <div class="visual-label"> Date </div>
+            <%= event.date_time.to_formatted_s(:long_ordinal) %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 <% end %>
