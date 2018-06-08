@@ -50,3 +50,15 @@
     width: 100%;
   }
 }
+
+.wasl-photos {
+  img {
+    @include media-up($medium-screen) {
+      @include margin(null 10px);
+    }
+
+    @include media-up($large-screen) {
+      @include margin(null 60px);
+    }
+  }
+}

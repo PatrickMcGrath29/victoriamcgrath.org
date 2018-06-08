@@ -36,6 +36,9 @@ $normal-font-weight: 400;
 $semibold-font-weight: 600;
 $bold-font-weight: 700;
 
+// Gradients
+$base-gradient: linear-gradient(135deg, $vsm-primary 0%, rgba(181,226,227,1) 100%);
+
 // Borders
 $base-border-color: $vsm-darkest;
 $base-border-radius: 4px;

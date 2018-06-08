@@ -29,7 +29,7 @@
     @include size(250px, auto);
 
     @include media-up($medium-screen) {
-      @include size(400px, auto);      
+      @include size(400px, auto);
     }
   }
 }
