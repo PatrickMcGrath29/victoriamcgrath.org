@@ -4,7 +4,7 @@
       <h4 class="section-header">Upcoming Events</h4>
     </div>
     <div class="container">
-      <div class="upcoming-events">
+      <div class="events-group">
         <%= render partial: "shared/event-card", collection: @upcoming_events, as: :event %>
       </div>
     </div>
@@ -14,13 +14,16 @@
       <h4 class="section-header">Past Events</h4>
     </div>
     <div class="container">
-      <div class="past-events">
+      <div class="events-group">
         <%= render partial: "shared/event-card", collection: @past_events, as: :event %>
       </div>
     </div>
   <% end %>
   <br/>
   <% if admin_user? %>
-    <%= link_to "New Event", new_event_path, class: "button" %>
+    <div class="container">
+      <br/>
+      <%= link_to "New Event", new_event_path, class: "button" %>
+    </div>
   <% end %>
 </section>

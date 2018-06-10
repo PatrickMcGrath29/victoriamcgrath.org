@@ -62,3 +62,29 @@
     }
   }
 }
+
+#funding-stats {
+  background-color: $vsm-primary;
+}
+
+.funding-stats {
+  @include padding(30px 10px);
+  color: $white;
+  text-align: center;
+
+  .funding-stats__title {
+    margin: 0;
+  }
+
+  .funding-stats__orgs {
+    @include margin(10px null);
+  }
+
+  .funding-stats__org-item {
+
+    color: $vsm-darkest;
+    h5 {
+      margin: 0;
+    }
+  }
+}

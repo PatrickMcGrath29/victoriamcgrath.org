@@ -1,9 +1,12 @@
 .event-card {
-  @include flex-responsive();
-  @include padding(20px);
   background-color: $white;
   box-shadow: $base-box-shadow;
   color: $text-color;
+}
+
+.event-card__body {
+  @include padding(20px);
+  @include flex-responsive();
 }
 
 .event-card__image img {
@@ -25,4 +28,17 @@
 
 .event-card__item {
   flex-basis: 50%;
+}
+
+.event-card__date {
+  @include flex-responsive();
+  @include padding(5px null);
+  align-items: center;
+  background-color: $vsm-primary;
+  color: $white;
+  justify-content: center;
+
+  h2, h3, h4 {
+    margin-bottom: 0;
+  }
 }
