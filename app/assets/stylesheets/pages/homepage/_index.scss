@@ -25,7 +25,7 @@
   }
 }
 
-.homepage-video {
+.responsive-video {
   @include media-up($medium-screen) {
     @include margin(30px);
   }
