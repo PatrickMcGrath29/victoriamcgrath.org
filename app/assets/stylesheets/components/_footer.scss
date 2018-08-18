@@ -1,7 +1,7 @@
 $footer-height: 175px;
 
 footer {
-  background-color: $vsm-primary;
+  background-color: $primary-color;
   color: $white;
 }
 
@@ -47,11 +47,12 @@ footer {
 }
 
 .contact-email {
+  color: $white;
   font-weight: $semibold-font-weight;
 }
 
 .subscribe-button {
-  background-color: $vsm-darkest !important;
+  background-color: $primary-color-darkest !important;
 }
 
 .svg-icon {
@@ -62,7 +63,7 @@ footer {
 }
 
 .footer-nav-link {
-  color: $vsm-darkest;
+  color: $primary-color-darkest;
   font-size: $small-font-size;
   text-transform: uppercase;
 }

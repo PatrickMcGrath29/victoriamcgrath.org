@@ -25,20 +25,6 @@
   }
 }
 
-.responsive-video {
-  @include media-up($medium-screen) {
-    @include margin(30px);
-  }
-
-  @include media-down($medium-screen) {
-    padding-bottom: 0;
-
-    iframe{
-      width: 100%;
-    }
-  }
-}
-
 .wasl-image-wrapper {
   overflow: hidden;
 }
@@ -64,7 +50,7 @@
 }
 
 #funding-stats {
-  background-color: $vsm-primary;
+  background-color: $primary-color;
 }
 
 .funding-stats {
@@ -81,10 +67,47 @@
   }
 
   .funding-stats__org-item {
+    color: $primary-color-darkest;
+    margin: 0;
+  }
+}
 
-    color: $vsm-darkest;
-    h5 {
-      margin: 0;
+#vsm-introduction {
+  @include margin(40px null);
+}
+
+#home-featured-project {
+  background-color: $white;
+
+  .featured-project {
+    border-top: $gray-border;
+    padding-top: 30px;
+  }
+
+  .featured-project__image {
+    @include padding(20px 0);
+    position: relative;
+    text-align: center;
+
+    img {
+      max-height: 600px;
+      max-width: 100%;
+
+      @include media-up($medium-screen) {
+        transform: translate(-20%, 0);
+      }
+    }
+  }
+
+  .featured-project__image-caption {
+    @include padding(40px);
+    background-color: $offwhite-background;
+
+    @include media-up($medium-screen) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -50%);
     }
   }
 }

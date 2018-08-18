@@ -16,23 +16,22 @@
   </div>
 </section>
 
-<section id="funding-stats">
+<%# <section id="funding-stats">
   <div class="container">
     <div class="funding-stats">
       <h3 class="funding-stats__title">you've given over $29,000 to those in need</h3>
-      <div class="funding-stats__orgs carousel">
-        <div class="funding-stats__org-item">
-          <h5> Prospector Theater - $3,000</h5>
-        </div>
-        <div class="funding-stats__org-item">
-          <h5> Joni and Friends - $11,000</h5>
-        </div>
+      <div class="funding-stats__orgs fade-carousel">
+        <h5 class="funding-stats__org-item"> Prospector Theater </h5>
+        <h5 class="funding-stats__org-item"> Joni and Friends </h5>
       </div>
     </div>
   </div>
+</section> %>
+<section id="home-featured-project">
+  <%= render partial: "shared/project_page", locals: { project: @featured_project } %>
 </section>
 
-
+<%#
 <section id="home-upcoming-project">
   <div class="section-header-wrapper left-stroke centered">
     <h4 class="section-header"><em>Upcoming</em> Events</h4>

@@ -1,10 +1,11 @@
 header {
   align-items: center;
-  background-color: $vsm-primary;
+  background-color: $primary-color;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   flex-wrap: wrap;
+  font-family: $heading-font-family;
 
   @include media-up($medium-screen) {
     min-height: 60px;
@@ -30,7 +31,7 @@ header {
 }
 
 .navbar-link {
-  border-bottom-color: $vsm-primary;
+  border-bottom-color: $primary-color;
   color: $white;
   font-weight: $semibold-font-weight;
   padding: 10px 15px;
@@ -53,13 +54,13 @@ header {
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid $vsm-darkest;
+      border-bottom: 1px solid $primary-color-darkest;
     }
   }
 }
 
 .navbar-link-darker {
-  background-color: $vsm-darker;
+  background-color: $primary-color-darker;
   border-radius: $base-border-radius;
 }
 

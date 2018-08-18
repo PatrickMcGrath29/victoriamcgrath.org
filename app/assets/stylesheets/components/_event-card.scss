@@ -2,6 +2,7 @@
   background-color: $white;
   box-shadow: $base-box-shadow;
   color: $text-color;
+  margin-bottom: 50px;
 }
 
 .event-card__body {
@@ -34,7 +35,7 @@
   @include flex-responsive();
   @include padding(5px null);
   align-items: center;
-  background-color: $vsm-primary;
+  background-color: $primary-color-light;
   color: $white;
   justify-content: center;
 

@@ -13,9 +13,10 @@ body {
 }
 
 p {
-  line-height: 1.7em;
+  line-height: 1.75em;
   font-size: 1.2em;
   font-family: $base-font-family;
+  font-weight: $normal-font-weight;
 }
 
 h1,
@@ -28,6 +29,7 @@ h6 {
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 2rem;
+  color: $primary-color-darker;
 }
 
 h1 {

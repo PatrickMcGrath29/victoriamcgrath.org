@@ -1,12 +1,13 @@
-$base-font-family: "Avenir", "HelveticaNeue", "Helvetica Neue";
+$base-font-family: "Open Sans",sans-serif;
 $heading-font-family: "Trebuchet MS", Georgia, serif;
 
 // Colors
-$vsm-primary: #018697;
-$vsm-darker: #01616d;
-$vsm-darkest: #013D45;
+$primary-color: #018697;
+$primary-color-darker: #306363;
+$primary-color-darkest: #013D45;
+$primary-color-light: #70bdc7;
 
-$offwhite-background: rgba(245, 247, 238, 0.8);
+$offwhite-background: rgba(245, 247, 238, 1);
 
 $background-color: #e7f4f542;
 $green: #16a085;
@@ -33,21 +34,24 @@ $xll-font-size: $xl-font-size * 1.2;
 
 
 // Font weights
-$normal-font-weight: 400;
+$normal-font-weight: 300;
 $semibold-font-weight: 600;
 $bold-font-weight: 700;
 
 // Gradients
-$base-gradient: linear-gradient(135deg, $vsm-primary 0%, rgba(181,226,227,1) 100%);
+$base-gradient: linear-gradient(135deg, $primary-color 0%, rgba(181,226,227,1) 100%);
 
 // Borders
-$base-border-color: $vsm-darkest;
-$light-border-color: $vsm-primary;
+$base-border-color: $primary-color-darkest;
+$light-border-color: $primary-color;
+$gray-border-color: #ddd;
+
 $base-border-radius: 4px;
 
 $base-border: $base-border-color 2px solid;
 $thicker-border: $base-border-color 3px solid;
 $light-border: $light-border-color 3px solid;
+$gray-border: $gray-border-color 1px solid;
 
 $thin-border: $medium-gray 1px solid;
 //Shadows

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="featured-project">
+    <%= render partial: "shared/section_header", locals: {
+      title: project.title,
+      centered: true } %>
+    <div class="featured-project__body">
+      <%== project.short_description %>
+    </div>
+    <div class="featured-project__image">
+      <%= image_tag project.primary_image %>
+      <div class="featured-project__image-caption">
+        <div class="featured-project__image-caption-wrapper">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis turpis vel ex semper, feugiat tincidunt quam mollis. Etiam malesuada molestie lacinia. Donec neque lectus, ornare ac massa vitae, faucibus vestibulum.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
